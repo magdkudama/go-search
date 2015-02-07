@@ -33,8 +33,7 @@ type T interface{}
 //
 // Example:
 //     values := []string{"hello", "go"}
-//     value  := "go"
-//	   Search(values, value)
+//     Search(values, "go")
 func Search(values T, search T) (bool, int, error) {
 	typeOf := reflect.TypeOf(values)
 
