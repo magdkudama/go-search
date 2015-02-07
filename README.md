@@ -24,7 +24,8 @@ import (
 )
 
 func main() {
-	found, pos, err := search.Search()
+	elements := []string{"hey","gopher","you","rule"}
+	found, pos, err := search.Search("gopher")
 
 	fmt.Println("Was element found?: ", found)
 	fmt.Println("In what position?: ", pos)
